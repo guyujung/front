@@ -4,15 +4,15 @@ import router from './router/index';
 
 //Axios 인스턴스 생성 및 기본 설정
 const axiosInstanceNode = axios.create({
-    baseURL: 'http://44.219.162.63:3000'
+    baseURL: 'http://44.219.162.63:8001'
 })
 const axiosInstanceSpring = axios.create({
-    baseURL : 'http://localhost:3210'
+    baseURL : 'http://localhost:8080'
 })
 const axiosInstance = axios.create({
-    baseURL : process.env.VUE_APP_GATEWAY_URI
+   // zzbaseURL : process.env.VUE_APP_GATEWAY_URI
     //baseURL : 'http://apigateway-service:8001'
-    //baseURL: 'http://localhost:8001/api'
+    baseURL: 'http://localhost:8001'
 })
 const axiosInstanceChat = axios.create({
     baseURL : 'http://localhost:3001'
